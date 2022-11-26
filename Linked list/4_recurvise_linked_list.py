@@ -20,22 +20,24 @@ class linkedlist:
         return  
 
     def printf(self):
-        self.recp(self.head)    
-    def reverse_printf(self):
-        self.rev_recp(self.head)       
+        self.recp(self.head) 
 
     def recp(self,head1):
         
         if head1 is None:
             return
         print(head1.data,end="->")
-        self.recp(head1.next)   
+        self.recp(head1.next)      
+
+    def reverse_printf(self):
+        self.rev_recp(self.head)       
 
     def rev_recp(self,head1):
         if head1 is None:
             return
         self.rev_recp(head1.next) 
         print(head1.data,end="->")        
+        
 
 llist=linkedlist()
 
