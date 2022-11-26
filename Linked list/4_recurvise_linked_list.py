@@ -13,7 +13,7 @@ class linkedlist:
             self.head=self.temp1
             return
         self.temp2=self.head
-        for i in range(1,n-2):
+        for i in range(1,n-1):
             self.temp2=self.temp2.next
         self.temp1.next=self.temp2.next
         self.temp2.next=self.temp1
