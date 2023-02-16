@@ -18,18 +18,18 @@ class linkedlist:
         self.temp1.next=self.temp2.next
         self.temp2.next=self.temp1
         return  
-
+#recursively print linked list
     def printf(self):
         self.recp(self.head) 
 
-    def recp(self,head1):
+    def recp(self,head1):  #recursively print
         
         if head1 is None:
             return
         print(head1.data,end="->")
         self.recp(head1.next)      
 
-    def reverse_printf(self):
+    def reverse_printf(self):  #recursive reversal print
         self.rev_recp(self.head)       
 
     def rev_recp(self,head1):

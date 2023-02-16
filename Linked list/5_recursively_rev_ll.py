@@ -29,7 +29,7 @@ class linkedlist:
         temp.next = item
         item.next = None'''
 
-
+#recursivley reverse the list
     def revrec(self,p):
         
         if p.next is None:
